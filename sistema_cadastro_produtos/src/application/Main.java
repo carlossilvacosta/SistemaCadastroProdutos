@@ -35,7 +35,7 @@ public class Main {
 				if(tipoCadastro == 's') {
 					System.out.print("Digite um ID para o produto ( 4 digitos / ex: 1234): ");
 					int id = sc.nextInt();
-					if(cadastro.existeProdutoComId(id) || id > 9999) {
+					if(cadastro.existeProdutoComId(id) || id > 9999 || id < 1000) {
 			            System.out.println("Este ID já existe no sistema. "
 			            		+ "OBS.:Ou quantidade de digitos incorretos.");
 			        } else {
